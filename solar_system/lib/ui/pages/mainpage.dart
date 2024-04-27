@@ -15,7 +15,7 @@ class Mainpage extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
-bottomNavigationBar: Bottomnavigationwidget(),
+      bottomNavigationBar: Bottomnavigationwidget(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -24,7 +24,6 @@ bottomNavigationBar: Bottomnavigationwidget(),
               child: ListView(
                 children: [
                   Headerwidgettext(),
-
                   Emptycontainer(),
                   //   Firstheaderwidget(),
                   Secondheaderwidgettext(),

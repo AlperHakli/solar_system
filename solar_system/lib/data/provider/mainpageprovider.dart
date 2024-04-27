@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class Mainpageprovider extends ChangeNotifier {
   BuildContext mycontext;
+  int bottombarindex = 2;
 
   Mainpageprovider({required this.mycontext});
 
@@ -26,4 +27,10 @@ class Mainpageprovider extends ChangeNotifier {
     sprefs.setBool("isdarktheme", value);
     notifyListeners();
   }
+  void changeindex (int index)
+  {
+    bottombarindex = index;
+    notifyListeners();
+  }
+
 }

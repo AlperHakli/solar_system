@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="938439bb-00e7-4d69-883f-630a43dbec2d" name="Changes" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/assets/icons/orbit.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/icons/myicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/orbit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/data/provider/mainpageprovider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/data/provider/mainpageprovider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/mainpage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/mainpage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/bottomnavigationwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/bottomnavigationwidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/firstheaderswidget.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/firstheaderwitgetcards.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,16 +44,19 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/Alper/Documents/GitHub/solar_system/assests/icons",
+    "last_opened_file_path": "C:/Users/Alper/Documents/GitHub/solar_system/solar_system/lib/ui/icons",
     "settings.editor.selected.configurable": "dart.settings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alper\Documents\GitHub\solar_system\solar_system\lib\ui\icons" />
       <recent name="C:\Users\Alper\Documents\GitHub\solar_system\assests\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alper\Documents\GitHub\solar_system\solar_system\lib\ui\icons" />
+      <recent name="C:\Users\Alper\Documents\GitHub\solar_system\assets\icons" />
       <recent name="C:\Users\Alper\Documents\GitHub\solar_system\solar_system\lib\ui\widgets" />
     </key>
   </component>
