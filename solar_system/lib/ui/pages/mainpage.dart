@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 import 'package:solar_system/data/provider/mainpageprovider.dart';
 import 'package:solar_system/ui/widgets/bottomlistwidget.dart';
+import 'package:solar_system/ui/widgets/bottomnavigationwidget.dart';
 import 'package:solar_system/ui/widgets/emptycontainer.dart';
 import 'package:solar_system/ui/widgets/firstheaderswidget.dart';
 import 'package:solar_system/ui/widgets/headerwidgettext.dart';
@@ -19,6 +20,7 @@ class Mainpage extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
+      bottomNavigationBar: Bottomnavigationwidget(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

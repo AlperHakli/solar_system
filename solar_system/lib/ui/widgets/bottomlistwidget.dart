@@ -11,8 +11,7 @@ class Bottomlistwidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    return Flexible(
-      child: StreamBuilder(
+    return StreamBuilder(
           stream: context.watch<Firebaseevents>().getsecondmenuheadersstream(),
           builder: (context, snaphot) {
             if (snaphot.hasData) {
@@ -40,7 +39,7 @@ class Bottomlistwidget extends StatelessWidget {
                 child: Text("Snapshot no data"),
               );
             }
-          }),
+          }
     );
   }
 }
