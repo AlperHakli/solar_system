@@ -46,6 +46,7 @@ dev_dependencies:
   firebase_core:
   cloud_firestore:
   firebase_storage:
+  flutter_svg:
 
 
 
@@ -62,6 +63,11 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/icons/orbit.svg
+
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

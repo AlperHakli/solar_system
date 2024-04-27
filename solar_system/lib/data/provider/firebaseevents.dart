@@ -3,7 +3,6 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
 class Firebaseevents extends ChangeNotifier {
-
   Stream<QuerySnapshot<Map<String, dynamic>>> getheadersstream() {
     var collection = FirebaseFirestore.instance.collection("header");
 
@@ -25,10 +24,14 @@ class Firebaseevents extends ChangeNotifier {
     return urladress;
   }
 
-  Future<String> getheaderpictureurl(String image_name) async {
-    var ref = FirebaseStorage.instance.ref().child("images/$image_name");
-    String urladress = await ref.getDownloadURL();
+  Future<List<String>> getheaderpictureurl(List<String> imgnamelist) async {
+    var imgurllist = <String>[];
 
-    return urladress;
+    for (String image_name in imgnamelist) {
+      var ref = FirebaseStorage.instance.ref().child("images/$image_name");
+      String urladress = await ref.getDownloadURL();
+      imgurllist.add(urladress);
+    }
+    return imgurllist;
   }
 }
