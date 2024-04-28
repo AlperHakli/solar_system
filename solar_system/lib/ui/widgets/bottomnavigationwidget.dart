@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
@@ -31,54 +32,36 @@ class Bottomnavigationwidget extends StatelessWidget {
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   var pictureurllist = snapshot.data!;
-                  return BottomNavigationBar(
-                    showUnselectedLabels: true,
-                      backgroundColor: Colors.black,
-                      fixedColor: Colors.purpleAccent,
-                      items: [
-                        BottomNavigationBarItem(
-                            label: menuheaderlist[3],
-                            icon: SizedBox(
-                                width: 35,
-                                height: 35,
-                                child: Image.network(pictureurllist[3]))),
-                        BottomNavigationBarItem(
-                          label: menuheaderlist[1],
-                          icon: SizedBox(
-                              width: 35,
-                              height: 35,
-                              child: Image.network(pictureurllist[1])),
-                        ),
-                        BottomNavigationBarItem(
-                          label: menuheaderlist[4],
-                          icon: SizedBox(
-                              width: 35,
-                              height: 35,
-                              child: Image.network(pictureurllist[4])),
-                        ),
-                        BottomNavigationBarItem(
-                            label: menuheaderlist[0],
-                            icon: SizedBox(
-                                width: 35,
-                                height: 35,
-                                child: Image.network(pictureurllist[0]))),
-                        BottomNavigationBarItem(
-                          label: menuheaderlist[2],
-                          icon: SizedBox(
-                              width: 35,
-                              height: 35,
-                              child: Image.network(pictureurllist[2])),
-                        ),
-                      ],
-                    currentIndex: context.watch<Mainpageprovider>().bottombarindex,
-                    onTap: (value){
-                        context.read<Mainpageprovider>().changeindex(value);
+                  return CurvedNavigationBar(
+                    color: Colors.blueGrey,
+                    backgroundColor: Colors.transparent,
+                    buttonBackgroundColor: Colors.blue,
+                    items: [
+                      SizedBox(
+                          width: 50,
+                          height: 45,
+                          child: Image.network(pictureurllist[0])),
+                      SizedBox(
+                          width: 50,
+                          height: 45,
+                          child: Image.network(pictureurllist[1])),
+                      SizedBox(
+                          width: 50,
+                          height: 45,
+                          child: Image.network(pictureurllist[4])),
+                      SizedBox(
+                          width: 50,
+                          height: 45,
+                          child: Image.network(pictureurllist[2])),
+                      SizedBox(
+                          width: 50,
+                          height: 45,
+                          child: Image.network(pictureurllist[3])),
+                    ],
+                    onTap: (value) {
+                      context.read<Mainpageprovider>().changeindex(value);
                     },
-
-
-
                   );
-
                 } else if (snapshot.hasError) {
                   print("hata oluştuuuuuuu");
                   return CircularProgressIndicator();

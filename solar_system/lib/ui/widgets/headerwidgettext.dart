@@ -9,15 +9,18 @@ class Headerwidgettext extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
+        Container(
+          width: width/20,
+        ),
         Text(
           "Solar",
-          style: GoogleFonts.chakraPetch(fontSize: width/8,color: Theme.of(context).primaryColor),
+          style: GoogleFonts.chakraPetch(fontSize: width/11,color: Theme.of(context).primaryColor),
         ),
         Text(
           "System",
-          style: GoogleFonts.chakraPetch(fontSize: width/8,
+          style: GoogleFonts.chakraPetch(fontSize: width/11,
               color: Theme.of(context).secondaryHeaderColor),
         ),
       ],
