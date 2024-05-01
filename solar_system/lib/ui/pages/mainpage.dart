@@ -17,14 +17,14 @@ class Mainpage extends StatelessWidget {
       child: Scaffold(
         extendBody: true,
         backgroundColor: Theme.of(context).colorScheme.background,
-        bottomNavigationBar: Bottomnavigationwidget(),
+        bottomNavigationBar: const Bottomnavigationwidget(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Flexible(
                 child: ListView(
-                  children: [
+                  children: const [
                     Emptycontainer(),
                     Headerwidgettext(),
                     Emptycontainer(),

@@ -17,9 +17,9 @@ class Firebaseevents extends ChangeNotifier {
     return mystate;
   }
 
-  Future<String> getsecondmenupictureurl(String image_name) async {
+  Future<String> getsecondmenupictureurl(String imageName) async {
     var ref =
-        FirebaseStorage.instance.ref().child("secondmenuimages/$image_name");
+        FirebaseStorage.instance.ref().child("secondmenuimages/$imageName");
     String urladress = await ref.getDownloadURL();
     return urladress;
   }

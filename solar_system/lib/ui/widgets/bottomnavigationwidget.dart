@@ -64,17 +64,17 @@ class Bottomnavigationwidget extends StatelessWidget {
                   );
                 } else if (snapshot.hasError) {
                   print("hata oluştuuuuuuu");
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 } else {
                   print("data yokkkkkkkk");
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 }
               },
             );
           } else if (snapshot.hasError) {
-            return Center();
+            return const Center();
           } else {
-            return Center();
+            return const Center();
           }
         });
   }

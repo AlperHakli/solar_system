@@ -10,7 +10,7 @@ import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-      options: FirebaseOptions(
+      options: const FirebaseOptions(
         apiKey: "AIzaSyCyXfI02MSwnWd2YjCZHbLsMlySvrB1luw",
         appId: 'id',
         messagingSenderId: 'sendid',
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: snapshot.data ?? true ? darktheme : lighttheme,
-              home: Mainpage(),
+              home: const Mainpage(),
             );
           },
         );

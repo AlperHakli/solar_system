@@ -7,6 +7,6 @@ class Secondheaderwidgettext extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("SPACE STRUCTURES",style: TextStyle(fontSize: 25,color: Colors.black),);
+    return const Text("SPACE STRUCTURES",style: TextStyle(fontSize: 25,color: Colors.black),);
   }
 }

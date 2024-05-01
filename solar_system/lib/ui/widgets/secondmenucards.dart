@@ -6,7 +6,7 @@ class Secondmenucards extends StatelessWidget {
   String picture_name;
   String name;
 
-  Secondmenucards({required this.picture_name, required this.name});
+  Secondmenucards({super.key, required this.picture_name, required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +21,6 @@ class Secondmenucards extends StatelessWidget {
             String imgurl = snapshot.data ?? "null";
             return Card(
               child: Container(
-                width: width / 1.2,
-                height: height / 3,
                 decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(15)),
                     image: DecorationImage(
@@ -34,15 +32,15 @@ class Secondmenucards extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 8.0, left: 16),
                         child: Text(
                           textAlign: TextAlign.start,
-                          "$name",
-                          style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),
+                          name,
+                          style: const TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),
                         ),
                       )
                     ]),
-                    Spacer(),
-                    Divider(),
+                    const Spacer(),
+                    const Divider(),
                     SizedBox(
-                      height: height/14,
+                      height: height/18,
                       child: GestureDetector(
                         onTap: () {
                         },
@@ -52,7 +50,7 @@ class Secondmenucards extends StatelessWidget {
                           children: [
                             IconButton(onPressed: (){
 
-                            }, icon: Icon(Icons.arrow_forward_ios)),
+                            }, icon: const Icon(Icons.arrow_forward_ios)),
                           ],
                         ),
                       ),
@@ -62,11 +60,11 @@ class Secondmenucards extends StatelessWidget {
               ),
             );
           } else if (snapshot.hasError) {
-            return Center(
+            return const Center(
               child: Text("HATA VARR"),
             );
           } else {
-            return Center(
+            return const Center(
               child: Text("DATA YOKK"),
             );
           }

@@ -17,7 +17,8 @@ class Bottomlistwidget extends StatelessWidget {
             if (snaphot.hasData) {
               List mydocuments = snaphot.data!.docs;
 
-              return ListView.builder(
+              return GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 1.7),
                 physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: mydocuments.length,
@@ -31,11 +32,11 @@ class Bottomlistwidget extends StatelessWidget {
 
                   });
             } else if (snaphot.hasError) {
-              return Center(
+              return const Center(
                 child: Text("Snapshot error"),
               );
             } else {
-              return Center(
+              return const Center(
                 child: Text("Snapshot no data"),
               );
             }
@@ -43,24 +44,4 @@ class Bottomlistwidget extends StatelessWidget {
     );
   }
 }
-/* child: ListView.builder(
-          shrinkWrap: true,
-          itemCount: trylist.length,
-          itemBuilder: (context, index) {
-            return Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children:[
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.all(Radius.circular(20)),
-                        color: Theme.of(context).colorScheme.primary),
-                    height: height / 4,
-                    width: width/1.05,
-                    child: Text(trylist[index]),
-                  ),
-                ),
-              ],
-            );
-          }),*/
+

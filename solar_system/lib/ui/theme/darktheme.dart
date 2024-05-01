@@ -4,7 +4,7 @@ import 'package:solar_system/colors.dart';
 ThemeData darktheme = ThemeData(
   primaryColor: solar_text_color_dark,
     secondaryHeaderColor: system_text_color,
-    colorScheme: ColorScheme(brightness: Brightness.light,
+    colorScheme: const ColorScheme(brightness: Brightness.light,
         primary: Colors.grey,
         onPrimary: Colors.black,
         secondary: Colors.white24,
