@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:solar_system/colors.dart';
 
 ThemeData lighttheme = ThemeData(
+
   secondaryHeaderColor: system_text_color,
   primaryColor: solar_text_color,
     colorScheme: ColorScheme(

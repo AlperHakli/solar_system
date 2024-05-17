@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
+import 'package:solar_system/ui/widgets/Imageslideritem.dart';
 
 class Imageslider extends StatelessWidget {
   const Imageslider({super.key});
@@ -34,59 +36,15 @@ class Imageslider extends StatelessWidget {
                       width: double.infinity,
                       child: CarouselSlider(
                           items: [
-                            Container(
-                                width: width,
-                                height: height / 3,
-                                child: Stack(
-                                  alignment: AlignmentDirectional.center,
-                                  children: [
-                                    Image.network(snapshot.data![0]),
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                          top: height / 5, right: width / 5),
-                                      child: Text(
-                                        "First we launched from earth",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                            Container(
-                                child: Stack(
-                              alignment: AlignmentDirectional.center,
-                              children: [
-                                Image.network(snapshot.data![1]),
-                                Padding(
-                                  padding: EdgeInsets.only(
-                                      top: height / 5, right: width / 10),
-                                  child: Text(
-                                    "Then we reach Earth's Exosphere",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                              ],
-                            )),
-                            Container(
-                                child: Stack(
-                              alignment: AlignmentDirectional.center,
-                              children: [
-                                SizedBox(
-                                    child: Image.network(snapshot.data![2])),
-                                Padding(
-                                  padding: EdgeInsets.only(
-                                      top: height / 5, right: width / 4),
-                                  child: Text(
-                                    "Finally we are at the Moon",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                              ],
-                            )),
+                           Imageslideritem(imageurl: snapshot.data![0],content: "First we launched from Earth",),
+                            Imageslideritem(imageurl: snapshot.data![1],content: "Then we reach Earth's Exosphere",),
+                            Imageslideritem(imageurl: snapshot.data![2],content: "Finally we are at the Moon",),
                           ],
                           options: CarouselOptions(
-                            height: height/3,
+
+                            viewportFraction: 1,
                             autoPlay: true,
-                            autoPlayInterval: Duration(seconds: 10),
+                            autoPlayInterval: Duration(seconds: 6),
                             autoPlayAnimationDuration: Duration(seconds: 3),
                             enableInfiniteScroll: false,
                           )),

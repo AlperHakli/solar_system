@@ -32,6 +32,7 @@ class Mainpage extends StatelessWidget {
                     Emptycontainer(),
                     Imageslider(),
                     Emptycontainer(),
+                    Divider(color: Colors.black,),
                     Bottomlistwidget(),
                     Emptycontainer(),
                     Secondheaderwidgettext(),

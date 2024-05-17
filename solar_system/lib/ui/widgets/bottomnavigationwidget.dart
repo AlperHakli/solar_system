@@ -33,6 +33,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                 if (snapshot.hasData) {
                   var pictureurllist = snapshot.data!;
                   return CurvedNavigationBar(
+                    index: 2,
                     color: Colors.blueGrey,
                     backgroundColor: Colors.transparent,
                     buttonBackgroundColor: Colors.blue,

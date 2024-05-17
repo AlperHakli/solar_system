@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 import 'package:solar_system/data/provider/mainpageprovider.dart';
@@ -11,12 +12,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCyXfI02MSwnWd2YjCZHbLsMlySvrB1luw",
-        appId: 'id',
-        messagingSenderId: 'sendid',
-        projectId:  "solarsystem-81b0b",
-        storageBucket: "solarsystem-81b0b.appspot.com",
-         ));
+    apiKey: "AIzaSyCyXfI02MSwnWd2YjCZHbLsMlySvrB1luw",
+    appId: 'id',
+    messagingSenderId: 'sendid',
+    projectId: "solarsystem-81b0b",
+    storageBucket: "solarsystem-81b0b.appspot.com",
+  ));
   runApp(const MyApp());
 }
 
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.blueGrey,
+    ));
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
