@@ -28,7 +28,7 @@ class Imageslider extends StatelessWidget {
             return FutureBuilder(
                 future: context
                     .watch<Firebaseevents>()
-                    .getimagesliderpictureurls(namelist),
+                    .get_image_names_at_images_file_with_image_name_list(namelist),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     snapshot.data!.sort;

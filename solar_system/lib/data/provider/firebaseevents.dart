@@ -28,15 +28,12 @@ class Firebaseevents extends ChangeNotifier {
     final mystate = coll.snapshots();
     return mystate;
   }
-  Future<String> getappbarpictureurl(String picture_name)async
+  Stream<QuerySnapshot<Map<String,dynamic>>> getspacecraftsinformation()
   {
-
-    var ref = FirebaseStorage.instance.ref().child("images/$picture_name");
-    String url = await ref.getDownloadURL();
-    return url;
-
+    var coll = FirebaseFirestore.instance.collection("Spacecrafts");
+    final mystate = coll.snapshots();
+    return mystate;
   }
-
 
   Future<String> getsecondmenupictureurl(String imageName) async {
     var ref =
@@ -44,7 +41,7 @@ class Firebaseevents extends ChangeNotifier {
     String urladress = await ref.getDownloadURL();
     return urladress;
   }
-  Future<List<String>> getimagesliderpictureurls(List<String> imgnamelist)async
+  Future<List<String>> get_image_names_at_images_file_with_image_name_list(List<String> imgnamelist)async
   {
     var imgurllist = <String>[];
 
