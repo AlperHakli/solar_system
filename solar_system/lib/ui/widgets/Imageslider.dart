@@ -32,7 +32,7 @@ class Imageslider extends StatelessWidget {
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     snapshot.data!.sort;
-                    return SizedBox(
+                    return Container(
                       width: double.infinity,
                       child: CarouselSlider(
                           items: [
@@ -41,8 +41,8 @@ class Imageslider extends StatelessWidget {
                             Imageslideritem(imageurl: snapshot.data![2],content: "Finally we are at the Moon",),
                           ],
                           options: CarouselOptions(
-
-                            viewportFraction: 1,
+                            enlargeCenterPage: true,
+                            viewportFraction: 0.8,
                             autoPlay: true,
                             autoPlayInterval: Duration(seconds: 6),
                             autoPlayAnimationDuration: Duration(seconds: 3),

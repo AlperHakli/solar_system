@@ -32,5 +32,10 @@ class Mainpageprovider extends ChangeNotifier {
     bottombarindex = index;
     notifyListeners();
   }
+  Future<int> getdotindex (int index)async
+  {
 
+    return index;
+
+  }
 }

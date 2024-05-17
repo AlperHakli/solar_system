@@ -22,6 +22,20 @@ class Firebaseevents extends ChangeNotifier {
     final mystate = coll.snapshots();
     return mystate;
   }
+  Stream<QuerySnapshot<Map<String,dynamic>>> getappbarphotoname()
+  {
+    var coll = FirebaseFirestore.instance.collection("Appbar");
+    final mystate = coll.snapshots();
+    return mystate;
+  }
+  Future<String> getappbarpictureurl(String picture_name)async
+  {
+
+    var ref = FirebaseStorage.instance.ref().child("images/$picture_name");
+    String url = await ref.getDownloadURL();
+    return url;
+
+  }
 
 
   Future<String> getsecondmenupictureurl(String imageName) async {

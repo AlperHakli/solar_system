@@ -13,7 +13,7 @@ ThemeData lighttheme = ThemeData(
         onSecondary: Colors.white,
         error: Colors.red,
         onError: Colors.redAccent,
-        background: Colors.white60,
+        background: bgcolorwhite,
         onBackground: Colors.grey,
         surface: Colors.black,
         onSurface: Colors.grey));
