@@ -1,14 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Headerwidgettext extends StatelessWidget {
-  const Headerwidgettext({super.key});
+class Appbarwidget extends StatelessWidget {
+  const Appbarwidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    return Row(
+    return SizedBox(
+      height: height/10,
+      child: Scaffold(body: CustomScrollView(
+        slivers: [SliverAppBar(
+      backgroundColor: Colors.red,
+          expandedHeight: height/10,
+
+
+
+        )],
+
+      ),),
+    );
+
+
+    /*Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
@@ -24,6 +39,6 @@ class Headerwidgettext extends StatelessWidget {
               color: Theme.of(context).secondaryHeaderColor),
         ),
       ],
-    );
+    );*/
   }
 }

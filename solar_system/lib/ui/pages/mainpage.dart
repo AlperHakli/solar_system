@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:solar_system/ui/widgets/Imageslider.dart';
 import 'package:solar_system/ui/widgets/bottomlistwidget.dart';
 import 'package:solar_system/ui/widgets/emptycontainer.dart';
-import 'package:solar_system/ui/widgets/headerwidgettext.dart';
+import 'package:solar_system/ui/widgets/appbarwidget.dart';
+import 'package:solar_system/ui/widgets/secondheaderwidgettext.dart';
+import 'package:solar_system/ui/widgets/smalleremptyconteiner.dart';
 
 import '../widgets/bottomnavigationwidget.dart';
 
@@ -25,10 +28,14 @@ class Mainpage extends StatelessWidget {
               Flexible(
                 child: ListView(
                   children: const [
+                    Appbarwidget(),
                     Emptycontainer(),
-                    Headerwidgettext(),
+                    Imageslider(),
                     Emptycontainer(),
                     Bottomlistwidget(),
+                    Emptycontainer(),
+                    Secondheaderwidgettext(),
+
                   ],
                 ),
               ),
