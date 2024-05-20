@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="938439bb-00e7-4d69-883f-630a43dbec2d" name="Changes" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/solar_system/lib/data/entity/spacecrafts.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/spacecraftitem.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SON HATALARİM" beforeDir="false" afterPath="$PROJECT_DIR$/SON HATALARİM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/data/entity/headers.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/data/entity/spacecrafts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/data/entity/spacecrafts.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/mainpage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/mainpage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/Imageslider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/Imageslider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/appbarwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/appbarwidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/spacecrafts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/spacecrafts.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/bottomnavigationwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/bottomnavigationwidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/spacecrafts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/spacecraftswidget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

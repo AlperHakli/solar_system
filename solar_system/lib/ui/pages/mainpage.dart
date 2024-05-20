@@ -5,6 +5,7 @@ import 'package:solar_system/ui/widgets/emptycontainer.dart';
 import 'package:solar_system/ui/widgets/appbarwidget.dart';
 import 'package:solar_system/ui/widgets/secondheaderwidgettext.dart';
 import 'package:solar_system/ui/widgets/smalleremptyconteiner.dart';
+import 'package:solar_system/ui/widgets/spacecraftswidget.dart';
 
 import '../widgets/bottomnavigationwidget.dart';
 
@@ -34,6 +35,7 @@ class Mainpage extends StatelessWidget {
                     Emptycontainer(),
                     Secondheaderwidgettext(),
                     Divider(color: Colors.black,),
+                    Spacecraftswidget(),
                     Bottomlistwidget(),
                     Divider(color: Colors.black,),
                     Emptycontainer(),

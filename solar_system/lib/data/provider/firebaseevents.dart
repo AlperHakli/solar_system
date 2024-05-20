@@ -52,17 +52,15 @@ class Firebaseevents extends ChangeNotifier {
     }
     return imgurllist;
   }
+  Future<String> get_image_name_at_images_file_with_image_name(String imagename)async
+  {
+    var ref = FirebaseStorage.instance.ref().child("secondmenuimages/$imagename");
+    String url = await ref.getDownloadURL();
+    return url;
 
-  Future<List<String>> getheaderpictureurl(List<String> imgnamelist) async {
-    var imgurllist = <String>[];
-
-    for (String image_name in imgnamelist) {
-      var ref = FirebaseStorage.instance.ref().child("images/$image_name");
-      String urladress = await ref.getDownloadURL();
-      imgurllist.add(urladress);
-    }
-    return imgurllist;
   }
+
+
 
 
 

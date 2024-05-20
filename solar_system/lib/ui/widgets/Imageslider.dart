@@ -50,18 +50,18 @@ class Imageslider extends StatelessWidget {
                           )),
                     );
                   } else if (snapshot.hasError) {
-                    print("hata var futureda");
+
                     return CircularProgressIndicator();
                   } else {
-                    print("data yok futureda");
+
                     return CircularProgressIndicator();
                   }
                 });
           } else if (snapshot.hasError) {
-            print("hata var streamda");
+
             return CircularProgressIndicator();
           } else {
-            print("data yok futureda");
+
             return CircularProgressIndicator();
           }
         });

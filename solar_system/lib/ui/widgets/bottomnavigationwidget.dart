@@ -28,7 +28,7 @@ class Bottomnavigationwidget extends StatelessWidget {
             return FutureBuilder(
               future: context
                   .watch<Firebaseevents>()
-                  .getheaderpictureurl(picturenamelist),
+                  .get_image_names_at_images_file_with_image_name_list(picturenamelist),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   var pictureurllist = snapshot.data!;

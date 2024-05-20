@@ -3,8 +3,8 @@ class Spacecrafts {
   String headertext;
   String content;
 
-  Spacecrafts(
-      {required this.picturename,
-      required this.content,
-      required this.headertext});
+
+  Spacecrafts({required this.picturename , required this.headertext,required this.content});
+
+
 }
