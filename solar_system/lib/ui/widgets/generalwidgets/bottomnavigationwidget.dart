@@ -3,13 +3,24 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
-import 'package:solar_system/data/provider/mainpageprovider.dart';
+import 'package:solar_system/data/provider/pageevents.dart';
+import 'package:solar_system/ui/pages/blackholepage.dart';
+import 'package:solar_system/ui/pages/galaxiespage.dart';
+import 'package:solar_system/ui/pages/mainpage.dart';
+import 'package:solar_system/ui/pages/planetspage.dart';
+import 'package:solar_system/ui/pages/starspage.dart';
 
 class Bottomnavigationwidget extends StatelessWidget {
   const Bottomnavigationwidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var mywidgetlist = <Widget>[];
+    mywidgetlist.add(Starspage());
+    mywidgetlist.add(Blackholepage());
+    mywidgetlist.add(Mainpage());
+    mywidgetlist.add(Starspage());
+    mywidgetlist.add(Planetspage());
     return StreamBuilder(
         stream: context.watch<Firebaseevents>().getheadersstream(),
         builder: (context, snapshot) {
@@ -33,7 +44,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                 if (snapshot.hasData) {
                   var pictureurllist = snapshot.data!;
                   return CurvedNavigationBar(
-                    index: 2,
+                    index: context.watch<Pageevents>().getbottombarindex(),
                     color: Colors.blueGrey,
                     backgroundColor: Colors.transparent,
                     buttonBackgroundColor: Colors.blue,
@@ -60,7 +71,10 @@ class Bottomnavigationwidget extends StatelessWidget {
                           child: Image.network(pictureurllist[3])),
                     ],
                     onTap: (value) {
-                      context.read<Mainpageprovider>().changeindex(value);
+                      context.read<Pageevents>().changebottombarindex(value);
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                      mywidgetlist[value]
+                      ));
                     },
                   );
                 } else if (snapshot.hasError) {

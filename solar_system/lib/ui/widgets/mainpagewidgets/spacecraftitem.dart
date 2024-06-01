@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:solar_system/data/entity/spacecrafts.dart';
+import 'package:solar_system/data/entity/generalentity.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 
 class Spacecraftitem extends StatelessWidget {
 
-  Spacecrafts spacecrafts;
+  Generalentity spacecrafts;
 
   Spacecraftitem(
       {required this.spacecrafts});
@@ -52,7 +52,7 @@ class Spacecraftitem extends StatelessWidget {
           padding: EdgeInsets.only(top: height/100,left: width/100),
           child: Text(spacecrafts.headertext,style: GoogleFonts.dmSans(color: Theme.of(context).colorScheme.onSecondary),),
         ),
-        Text(spacecrafts.content),
+        Text("${spacecrafts.content.substring(0,40)}..."),
         ],
             ),
       );

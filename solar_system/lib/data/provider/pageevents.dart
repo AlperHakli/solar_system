@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class Mainpageprovider extends ChangeNotifier {
+class Pageevents extends ChangeNotifier {
   BuildContext mycontext;
   int bottombarindex = 2;
 
-  Mainpageprovider({required this.mycontext});
+  Pageevents({required this.mycontext});
 
   Future<bool> getthemeasync() async {
     SharedPreferences sprefs = await SharedPreferences.getInstance();
@@ -27,11 +27,18 @@ class Mainpageprovider extends ChangeNotifier {
     sprefs.setBool("isdarktheme", value);
     notifyListeners();
   }
-  void changeindex (int index)
+  void changebottombarindex (int index)
   {
     bottombarindex = index;
     notifyListeners();
+
+
   }
+  int getbottombarindex(){
+
+    return bottombarindex;
+  }
+
   Future<int> getdotindex (int index)async
   {
 

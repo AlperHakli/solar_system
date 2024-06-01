@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 import 'package:solar_system/colors.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 
-class Appbarwidget extends StatelessWidget {
-  const Appbarwidget({super.key});
+class Mainpageappbar extends StatelessWidget {
+  const Mainpageappbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,7 @@ class Appbarwidget extends StatelessWidget {
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
+              automaticallyImplyLeading: false,
               actions: [
                 IconButton(onPressed: (){}, icon: Icon(Icons.more_vert,size: width/12,))
               ],

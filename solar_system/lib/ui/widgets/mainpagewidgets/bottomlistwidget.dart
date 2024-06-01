@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
-import 'package:solar_system/ui/widgets/secondmenucards.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/secondmenucards.dart';
 
 class Bottomlistwidget extends StatelessWidget {
   const Bottomlistwidget({super.key});

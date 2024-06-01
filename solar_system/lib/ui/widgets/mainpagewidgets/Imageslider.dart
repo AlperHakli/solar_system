@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
-import 'package:solar_system/ui/widgets/Imageslideritem.dart';
+
+
+import 'Imageslideritem.dart';
 
 class Imageslider extends StatelessWidget {
   const Imageslider({super.key});
@@ -65,5 +67,6 @@ class Imageslider extends StatelessWidget {
             return CircularProgressIndicator();
           }
         });
+
   }
 }

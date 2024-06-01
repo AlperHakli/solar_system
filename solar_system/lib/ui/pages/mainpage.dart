@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:solar_system/ui/widgets/Imageslider.dart';
-import 'package:solar_system/ui/widgets/bottomlistwidget.dart';
-import 'package:solar_system/ui/widgets/emptycontainer.dart';
-import 'package:solar_system/ui/widgets/appbarwidget.dart';
-import 'package:solar_system/ui/widgets/secondheaderwidgettext.dart';
-import 'package:solar_system/ui/widgets/smalleremptyconteiner.dart';
-import 'package:solar_system/ui/widgets/spacecraftswidget.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/Imageslider.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/aboutnasawidget.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/bottomlistwidget.dart';
 
-import '../widgets/bottomnavigationwidget.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/mainpageappbar.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/smalleremptyconteiner.dart';
+import 'package:solar_system/ui/widgets/mainpagewidgets/spacecraftswidget.dart';
+
+import '../widgets/generalwidgets/bottomnavigationwidget.dart';
+import '../widgets/generalwidgets/emptycontainer.dart';
 
 class Mainpage extends StatelessWidget {
   const Mainpage({super.key});
@@ -18,33 +20,41 @@ class Mainpage extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return SafeArea(
       top: false,
-      child: Scaffold(
-        extendBody: true,
-        backgroundColor: Theme.of(context).colorScheme.background,
-        bottomNavigationBar: const Bottomnavigationwidget(),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Flexible(
-                child: ListView(
-                  children: const [
-                    Appbarwidget(),
-                    Emptycontainer(),
-                    Imageslider(),
-                    Emptycontainer(),
-                    Secondheaderwidgettext(),
-                    Divider(color: Colors.black,),
-                    Spacecraftswidget(),
-                    Bottomlistwidget(),
-                    Divider(color: Colors.black,),
-                    Emptycontainer(),
+      child: PopScope(
+       canPop: false,
+        child: Scaffold(
+          extendBody: true,
+          backgroundColor: Theme.of(context).colorScheme.background,
+          bottomNavigationBar: const Bottomnavigationwidget(),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Flexible(
+                  child: ListView(
+                    children: [
+                      Mainpageappbar(),
+                      Emptycontainer(),
+                      Imageslider(),
+                      Emptycontainer(),
+                      Headertextwidget(header: "Spacecrafts",),
+                      Divider(color: Colors.black,),
+                      Spacecraftswidget(),
+                      Emptycontainer(),
+                      Headertextwidget(header: "Spacestructures"),
+                      Divider(color: Colors.black,),
+                      Bottomlistwidget(),
+                      Emptycontainer(),
+                      Aboutnasa(),
+                      Emptycontainer(),
 
 
-                  ],
+
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
