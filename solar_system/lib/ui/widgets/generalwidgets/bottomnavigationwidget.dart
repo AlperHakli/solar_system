@@ -7,6 +7,7 @@ import 'package:solar_system/data/provider/pageevents.dart';
 import 'package:solar_system/ui/pages/blackholepage.dart';
 import 'package:solar_system/ui/pages/galaxiespage.dart';
 import 'package:solar_system/ui/pages/mainpage.dart';
+import 'package:solar_system/ui/pages/pagecontroller.dart';
 import 'package:solar_system/ui/pages/planetspage.dart';
 import 'package:solar_system/ui/pages/starspage.dart';
 
@@ -15,12 +16,6 @@ class Bottomnavigationwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var mywidgetlist = <Widget>[];
-    mywidgetlist.add(Starspage());
-    mywidgetlist.add(Blackholepage());
-    mywidgetlist.add(Mainpage());
-    mywidgetlist.add(Starspage());
-    mywidgetlist.add(Planetspage());
     return StreamBuilder(
         stream: context.watch<Firebaseevents>().getheadersstream(),
         builder: (context, snapshot) {
@@ -48,6 +43,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                     color: Colors.blueGrey,
                     backgroundColor: Colors.transparent,
                     buttonBackgroundColor: Colors.blue,
+                    animationDuration: Duration(milliseconds: 1000),
                     items: [
                       SizedBox(
                           width: 50,
@@ -72,9 +68,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                     ],
                     onTap: (value) {
                       context.read<Pageevents>().changebottombarindex(value);
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                      mywidgetlist[value]
-                      ));
+
                     },
                   );
                 } else if (snapshot.hasError) {

@@ -25,7 +25,7 @@ class Mainpage extends StatelessWidget {
         child: Scaffold(
           extendBody: true,
           backgroundColor: Theme.of(context).colorScheme.background,
-          bottomNavigationBar: const Bottomnavigationwidget(),
+
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,

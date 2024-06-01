@@ -9,7 +9,7 @@ class Starspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Bottomnavigationwidget(),
+
       body: Center(
         child: Column(
 

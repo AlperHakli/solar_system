@@ -10,12 +10,12 @@ class Blackholepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Bottomnavigationwidget(),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Appbarwidget(),
+            Appbarwidget(header: "Black Holes"),
             Divider(),
 
           ],

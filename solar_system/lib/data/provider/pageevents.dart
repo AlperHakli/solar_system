@@ -30,6 +30,7 @@ class Pageevents extends ChangeNotifier {
   void changebottombarindex (int index)
   {
     bottombarindex = index;
+    print(bottombarindex);
     notifyListeners();
 
 

@@ -1,9 +1,12 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 import 'package:solar_system/data/provider/pageevents.dart';
+import 'package:solar_system/firebase_options.dart';
 import 'package:solar_system/ui/pages/mainpage.dart';
+import 'package:solar_system/ui/pages/pagecontroller.dart';
 import 'package:solar_system/ui/theme/darktheme.dart';
 import 'package:solar_system/ui/theme/lighttheme.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -11,13 +14,13 @@ import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-      options: const FirebaseOptions(
-    apiKey: "AIzaSyCyXfI02MSwnWd2YjCZHbLsMlySvrB1luw",
-    appId: 'id',
-    messagingSenderId: 'sendid',
-    projectId: "solarsystem-81b0b",
-    storageBucket: "solarsystem-81b0b.appspot.com",
-  ));
+    options: DefaultFirebaseOptions.currentPlatform
+  );
+  await FirebaseAppCheck.instance.activate(
+    webProvider: ReCaptchaV3Provider('recaptcha-v3-site-key'),
+    androidProvider: AndroidProvider.debug,
+    appleProvider: AppleProvider.appAttest,
+  );
   runApp(const MyApp());
 }
 
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: snapshot.data ?? true ? darktheme : lighttheme,
-              home: const Mainpage(),
+              home:  Pagecontrollerwidget(),
             );
           },
         );
