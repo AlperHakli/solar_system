@@ -15,12 +15,12 @@ class Pagecontrollerwidget extends StatefulWidget {
   State<Pagecontrollerwidget> createState() => _PagecontrollerwidgetState();
 }
 
-class _PagecontrollerwidgetState extends State<Pagecontrollerwidget> with AutomaticKeepAliveClientMixin {
+class _PagecontrollerwidgetState extends State<Pagecontrollerwidget> {
   @override
   Widget build(BuildContext context) {
     var _pagecontroller = PageController(initialPage: 2);
     return Scaffold(
-      bottomNavigationBar: Bottomnavigationwidget(),
+      bottomNavigationBar: Bottomnavigationwidget(controller: _pagecontroller,),
       body: PageView(
         controller: _pagecontroller,
         children: [
@@ -32,14 +32,11 @@ class _PagecontrollerwidgetState extends State<Pagecontrollerwidget> with Automa
         ],
         onPageChanged: (value){
           context.read<Pageevents>().changebottombarindex(value);
-          _pagecontroller.animateToPage(context.watch<Pageevents>().getbottombarindex(), duration: Duration(milliseconds: 1000), curve: Curves.easeIn);
+          _pagecontroller.animateToPage(context.read<Pageevents>().getbottombarindex(), duration: Duration(milliseconds: 1000), curve: Curves.easeIn);
         },
       ),
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;
 }
 

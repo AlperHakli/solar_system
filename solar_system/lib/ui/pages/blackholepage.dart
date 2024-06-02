@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/aboutsomethingwidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/appbarwidget.dart';
 import 'package:solar_system/ui/widgets/mainpagewidgets/mainpageappbar.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/bottomnavigationwidget.dart';
@@ -15,8 +16,9 @@ class Blackholepage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Appbarwidget(header: "Black Holes"),
-            Divider(),
+            Appbarwidget(header: "About Black Holes"),
+           Aboutsomething(name: "blackholecontent"),
+
 
           ],
         ),

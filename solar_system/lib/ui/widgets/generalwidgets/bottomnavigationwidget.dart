@@ -12,7 +12,8 @@ import 'package:solar_system/ui/pages/planetspage.dart';
 import 'package:solar_system/ui/pages/starspage.dart';
 
 class Bottomnavigationwidget extends StatelessWidget {
-  const Bottomnavigationwidget({super.key});
+  PageController controller;
+  Bottomnavigationwidget({super.key,required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +68,9 @@ class Bottomnavigationwidget extends StatelessWidget {
                           child: Image.network(pictureurllist[3])),
                     ],
                     onTap: (value) {
+
                       context.read<Pageevents>().changebottombarindex(value);
+                      controller.animateToPage(value, duration: Duration(milliseconds: 150), curve: Curves.easeIn);
 
                     },
                   );
