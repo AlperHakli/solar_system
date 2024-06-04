@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
-
-import '../widgets/generalwidgets/bottomnavigationwidget.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/firstcontentwidget.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/emptycontainer.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
 
 class Starspage extends StatelessWidget {
   const Starspage({super.key});
@@ -9,10 +9,15 @@ class Starspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Emptycontainer(),
+            Headertextwidget(header: "About Stars"),
 
+          ],
         ),
       ),
     );

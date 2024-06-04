@@ -16,6 +16,13 @@ class Firebaseevents extends ChangeNotifier {
     final mystate = collection.snapshots();
     return mystate;
   }
+  Stream<QuerySnapshot<Map<String, dynamic>>> getaboutblackhole() {
+    var collection = FirebaseFirestore.instance.collection("black_hole");
+
+    final mystate = collection.snapshots();
+    return mystate;
+  }
+
   Stream<QuerySnapshot<Map<String, dynamic>>> getaboutsomething() {
     var collection = FirebaseFirestore.instance.collection("Abouttexts");
 
@@ -66,7 +73,7 @@ class Firebaseevents extends ChangeNotifier {
     }
     return imgurllist;
   }
-  Future<String> get_image_name_at_images_file_with_image_name(String imagename)async
+  Future<String> get_image_name_at_secondmenuimages_file_with_image_name(String imagename)async
   {
     var ref = FirebaseStorage.instance.ref().child("secondmenuimages/$imagename");
     String url = await ref.getDownloadURL();

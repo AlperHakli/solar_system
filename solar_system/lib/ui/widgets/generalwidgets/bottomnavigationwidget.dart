@@ -60,8 +60,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                           child: Image.network(pictureurllist[4])),
                       SizedBox(
                           width: 50,
-                          height: 45,
-                          child: Image.network(pictureurllist[2])),
+                      child: Image.network(pictureurllist[2])),
                       SizedBox(
                           width: 50,
                           height: 45,
