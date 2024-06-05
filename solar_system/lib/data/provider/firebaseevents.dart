@@ -16,15 +16,10 @@ class Firebaseevents extends ChangeNotifier {
     final mystate = collection.snapshots();
     return mystate;
   }
-  Stream<QuerySnapshot<Map<String, dynamic>>> getaboutblackhole() {
-    var collection = FirebaseFirestore.instance.collection("black_hole");
 
-    final mystate = collection.snapshots();
-    return mystate;
-  }
 
-  Stream<QuerySnapshot<Map<String, dynamic>>> getaboutsomething() {
-    var collection = FirebaseFirestore.instance.collection("Abouttexts");
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getaboutsomething(String name) {
+    var collection = FirebaseFirestore.instance.collection("Abouttexts").doc(name);
 
     final mystate = collection.snapshots();
     return mystate;
