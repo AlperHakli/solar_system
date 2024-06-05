@@ -6,7 +6,6 @@ import 'package:solar_system/data/provider/firebaseevents.dart';
 import 'package:solar_system/data/provider/pageevents.dart';
 import 'package:solar_system/firebase_options.dart';
 import 'package:solar_system/ui/pages/mainpage.dart';
-import 'package:solar_system/ui/pages/pagecontroller.dart';
 import 'package:solar_system/ui/theme/darktheme.dart';
 import 'package:solar_system/ui/theme/lighttheme.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -48,7 +47,7 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: snapshot.data ?? true ? darktheme : lighttheme,
-              home:  Pagecontrollerwidget(),
+              home:  Mainpage(),
             );
           },
         );

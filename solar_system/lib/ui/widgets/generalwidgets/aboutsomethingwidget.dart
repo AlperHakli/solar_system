@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,8 +16,9 @@ class Aboutsomethingwidget extends StatelessWidget {
         stream: context.watch<Firebaseevents>().getaboutsomething(name),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
+
             Map<String, dynamic> documentmap =
-                snapshot.data as Map<String, dynamic>;
+                snapshot.data!.data() as Map<String, dynamic>;
            var mydatas =  Aboutsomethingentity(
                picture_name: documentmap["picture_name"],
                content: documentmap["content"],
@@ -24,7 +26,7 @@ class Aboutsomethingwidget extends StatelessWidget {
 
             return Container(child: Card(
               color: Theme.of(context).colorScheme.onBackground,
-              child: ,
+              child: Center(),
             ),);
           } else if (snapshot.hasError) {
             return const Center(

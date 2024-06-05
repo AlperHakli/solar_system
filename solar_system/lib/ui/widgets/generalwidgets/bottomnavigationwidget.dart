@@ -7,7 +7,6 @@ import 'package:solar_system/data/provider/pageevents.dart';
 import 'package:solar_system/ui/pages/blackholepage.dart';
 import 'package:solar_system/ui/pages/galaxiespage.dart';
 import 'package:solar_system/ui/pages/mainpage.dart';
-import 'package:solar_system/ui/pages/pagecontroller.dart';
 import 'package:solar_system/ui/pages/planetspage.dart';
 import 'package:solar_system/ui/pages/starspage.dart';
 

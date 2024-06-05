@@ -18,7 +18,6 @@ class Appbarwidget extends StatelessWidget {
           slivers: [
             SliverAppBar(
               scrolledUnderElevation: 0,
-              automaticallyImplyLeading: false,
               expandedHeight: height / 10,
               backgroundColor: Colors.transparent,
               title: Row(
@@ -26,8 +25,8 @@ class Appbarwidget extends StatelessWidget {
                 children: [
                   Text(
                     header,
-                    style: GoogleFonts.chakraPetch(
-                      fontWeight: FontWeight.bold
+                    style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold
                         ,fontSize: width / 20,
                         color: Theme.of(context).colorScheme.onPrimary),
 

@@ -15,9 +15,9 @@ class Blackholepage extends StatelessWidget {
 
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Appbarwidget(header: "About Black Holes"),
+            Appbarwidget(header: "Black Holes"),
              Aboutsomethingwidget(name: "Aboutblackhole",),
 
 
