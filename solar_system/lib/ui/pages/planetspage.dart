@@ -12,6 +12,9 @@ class Planetspage extends StatelessWidget {
 
       body: Center(
         child: Column(
+          children: [
+            Text("deneme 2",style: TextStyle(fontSize: 25),)
+          ],
 
         ),
       ),

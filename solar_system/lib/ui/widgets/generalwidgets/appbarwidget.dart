@@ -27,7 +27,7 @@ class Appbarwidget extends StatelessWidget {
                     header,
                     style: GoogleFonts.roboto(
                         fontWeight: FontWeight.bold
-                        ,fontSize: width / 20,
+                        ,fontSize: width / 17,
                         color: Theme.of(context).colorScheme.onPrimary),
 
                   )

@@ -48,22 +48,22 @@ class Bottomnavigationwidget extends StatelessWidget {
                       SizedBox(
                           width: 50,
                           height: 45,
-                          child: Image.network(pictureurllist[0])),
+                          child: Image.network(pictureurllist[1])),
                       SizedBox(
                           width: 50,
                           height: 45,
-                          child: Image.network(pictureurllist[1])),
+                          child: Image.network(pictureurllist[2])),
                       SizedBox(
                           width: 50,
                           height: 45,
                           child: Image.network(pictureurllist[4])),
                       SizedBox(
                           width: 50,
-                      child: Image.network(pictureurllist[2])),
+                      child: Image.network(pictureurllist[3])),
                       SizedBox(
                           width: 50,
                           height: 45,
-                          child: Image.network(pictureurllist[3])),
+                          child: Image.network(pictureurllist[0])),
                     ],
                     onTap: (value) {
 

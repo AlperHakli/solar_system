@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="938439bb-00e7-4d69-883f-630a43dbec2d" name="Changes" comment="nothing">
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/pagecontroller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/datatexts.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/emptyappbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/getimagewithimgnamewidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/blackholepage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/blackholepage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/galaxiespage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/galaxiespage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/planetspage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/planetspage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/appbarwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/appbarwidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/bottomnavigationwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/bottomnavigationwidget.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PROJECT_TRUSTED_KEY": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/Alper/Documents/GitHub/solar_system/solar_system/android/app/src",
-    "settings.editor.selected.configurable": "dart.settings",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PROJECT_TRUSTED_KEY&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alper/Documents/GitHub/solar_system/solar_system/android/app/src&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alper\Documents\GitHub\solar_system\solar_system\android\app\src" />

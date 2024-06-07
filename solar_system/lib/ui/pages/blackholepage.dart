@@ -19,6 +19,7 @@ class Blackholepage extends StatelessWidget {
           children: [
             Appbarwidget(header: "Black Holes"),
              Aboutsomethingwidget(name: "Aboutblackhole",),
+            Text("deneme",style: TextStyle(fontSize: 25),)
 
 
 
