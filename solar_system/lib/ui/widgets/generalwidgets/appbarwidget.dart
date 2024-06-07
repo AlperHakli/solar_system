@@ -3,8 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class Appbarwidget extends StatelessWidget {
   String header;
+  PageController controller;
 
-  Appbarwidget({super.key, required this.header});
+  Appbarwidget({super.key, required this.header,required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class Appbarwidget extends StatelessWidget {
       child: Scaffold(
         extendBodyBehindAppBar: true,
         body: CustomScrollView(
+          physics: NeverScrollableScrollPhysics(),
           slivers: [
             SliverAppBar(
               scrolledUnderElevation: 0,

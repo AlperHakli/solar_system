@@ -7,7 +7,8 @@ import 'package:solar_system/ui/widgets/generalwidgets/bottomnavigationwidget.da
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
 
 class Blackholepage extends StatelessWidget {
-  const Blackholepage({super.key});
+  PageController controller;
+   Blackholepage({super.key,required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +18,8 @@ class Blackholepage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Appbarwidget(header: "Black Holes"),
+            Appbarwidget(header: "Black Holes",controller: controller,),
              Aboutsomethingwidget(name: "Aboutblackhole",),
-            Text("deneme",style: TextStyle(fontSize: 25),)
 
 
 

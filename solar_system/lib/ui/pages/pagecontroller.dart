@@ -18,11 +18,11 @@ class Pagecontrollerwidget extends StatelessWidget {
       body: PageView(
         controller: controller,
         children: [
-          Blackholepage(),
-          Galaxiespage(),
+          Blackholepage(controller: controller,),
+          Galaxiespage(controller: controller,),
           Mainpage(),
           Planetspage(),
-          Starspage(),
+          Starspage(controller: controller,),
 
         ],
 

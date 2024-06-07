@@ -10,10 +10,10 @@ ThemeData lighttheme = ThemeData(
         primary: primarygrey,
         onPrimary: Colors.black,
         secondary: Colors.white60,
-        onSecondary: Colors.white,
+        onSecondary: dark_grey,
         error: Colors.red,
         onError: Colors.redAccent,
-        background: bgcolorwhite,
+        background: bgcolor2,
         onBackground: onbgcolor,
-        surface: Colors.black,
+        surface: galaxytipiconcolor,
         onSurface: Colors.grey));

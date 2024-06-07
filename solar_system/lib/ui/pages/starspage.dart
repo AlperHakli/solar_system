@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/appbarwidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/firstcontentwidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/emptycontainer.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
 
 class Starspage extends StatelessWidget {
-  const Starspage({super.key});
+  PageController controller;
+   Starspage({super.key,required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class Starspage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Emptycontainer(),
-            Headertextwidget(header: "About Stars"),
+            Appbarwidget(header: "About Stars",controller: controller,),
 
           ],
         ),
