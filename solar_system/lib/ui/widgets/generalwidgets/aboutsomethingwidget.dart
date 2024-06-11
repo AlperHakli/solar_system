@@ -12,8 +12,8 @@ class Aboutsomethingwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
-        stream: context.watch<Firebaseevents>().getaboutsomething(name),
+    return FutureBuilder(
+        future: context.watch<Firebaseevents>().getaboutsomething(name),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
 

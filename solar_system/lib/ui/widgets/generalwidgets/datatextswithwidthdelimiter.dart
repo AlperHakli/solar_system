@@ -12,6 +12,6 @@ class Datatextswithwidthdelimiter extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return SizedBox(
         width: width/widthdivider,
-        child: Text(text,style: GoogleFonts.exo2(fontSize: width/fontsizewidthdivider,color: Theme.of(context).colorScheme.onSecondary)));
+        child: Text(text,style: GoogleFonts.exo2(fontSize: width/fontsizewidthdivider,color: Theme.of(context).colorScheme.onSurface)));
   }
 }

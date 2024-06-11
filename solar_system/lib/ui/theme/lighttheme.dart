@@ -16,4 +16,4 @@ ThemeData lighttheme = ThemeData(
         background: bgcolor2,
         onBackground: onbgcolor,
         surface: galaxytipiconcolor,
-        onSurface: Colors.grey));
+        onSurface: onsurfacecolor));

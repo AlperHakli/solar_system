@@ -29,9 +29,9 @@ class Getimagewithimgname extends StatelessWidget {
 
                 child: Image.network(snapshot.data!,fit: BoxFit.fill,));
           } else if (snapshot.hasError) {
-            return Center();
+            return CircularProgressIndicator();
           } else {
-            return Center();
+            return CircularProgressIndicator();
           }
         });
   }

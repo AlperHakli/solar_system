@@ -12,3 +12,4 @@ var onbgcolor = const Color(0xFFE7EFF5);
 var dark_grey = const Color(0xFF333333);
 var bgcolor2 = const Color(0xFFf0f0f0);
 var galaxytipiconcolor = const Color(0xFFDADADA);
+var onsurfacecolor = const Color(0xFF787878);

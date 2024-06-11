@@ -22,6 +22,7 @@ void main() async {
     appleProvider: AppleProvider.appAttest,
   );
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
+import 'package:solar_system/ui/widgets/galaxiespagewidgets/bottombutton.dart';
 import 'package:solar_system/ui/widgets/galaxiespagewidgets/didyouknowaboutmilkywaywidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/appbarwidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/bottomnavigationwidget.dart';
@@ -19,8 +20,8 @@ class Galaxiespage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
-        stream:
+    return FutureBuilder(
+        future:
             context.watch<Firebaseevents>().getaboutsomething("Aboutgalaxy"),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
@@ -46,9 +47,12 @@ class Galaxiespage extends StatelessWidget {
                             heightdivide: 2.5,
                             widthdivide: 1),
                         Smalleremptycontainer(),
-                        Headertextwidget(header: "Did you know?",widthdivider: 17,),
+                        Headertextwidget(header: "Did you know?",fontsizewidthdivider: 17,leftmarginwitdthdivider: 25,),
                         Emptycontainer(),
                         Didyouknowaboutmilkywaywidget(name: "Didyouknowgalaxy"),
+                        Row(mainAxisAlignment: MainAxisAlignment.center,children: [Bottombutton()],),
+                        Emptycontainer(),
+
                       ],
                     ),
                   ),

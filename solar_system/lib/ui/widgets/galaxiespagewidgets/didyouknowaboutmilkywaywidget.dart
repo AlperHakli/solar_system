@@ -17,8 +17,8 @@ class Didyouknowaboutmilkywaywidget extends StatelessWidget {
     return SizedBox(
       width: width,
       height: height / 3,
-      child: StreamBuilder(
-          stream: context
+      child: FutureBuilder(
+          future: context
               .watch<Firebaseevents>()
               .getaboutsomething("Didyouknowgalaxy"),
           builder: (context, snaptube) {
@@ -27,31 +27,33 @@ class Didyouknowaboutmilkywaywidget extends StatelessWidget {
                   snaptube.data!.data() as Map<String, dynamic>;
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  Container(width: width/30,),
                   Container(
-                      width: width / 10,
+                    decoration: BoxDecoration(color: Theme.of(context).colorScheme.surface,borderRadius: BorderRadius.all(Radius.circular(15))),
+                      width: width / 6,
                       height: height / 10,
-                      color: Theme.of(context).colorScheme.surface,
                       child: Icon(
-                        Icons.tips_and_updates,
+                        Icons.tips_and_updates_outlined,
                         size: width / 10,
                       )),
                  Container(
-                   width: width/70,
+                   width: width/20,
                  ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Headertextwidget(
-                          header: mymap["header"], widthdivider: 24),
+                          header: mymap["header"], fontsizewidthdivider: 24,leftmarginwitdthdivider: width,),
                       Datatextswithwidthdelimiter(
                           text: mymap["content"],
                           fontsizewidthdivider: 25,
                           widthdivider: 1.4),
                     ],
-                  )
+                  ),
+
                 ],
               );
             } else if (snaptube.hasError) {
