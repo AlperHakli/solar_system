@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,24 +17,22 @@ class Pagecontrollerwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   PageController controller = PageController(initialPage: 2);
+    PageController controller = PageController(initialPage: 2);
     return Scaffold(
-      bottomNavigationBar: Bottomnavigationwidget(controller:controller),
+      bottomNavigationBar: Bottomnavigationwidget(controller: controller),
       body: PageView(
         controller: controller,
         children: [
           Blackholepage(controller: controller,),
-          Galaxiespage(controller: controller,),
+          Galaxiespage(controller: controller),
           Mainpage(),
           Planetspage(),
           Starspage(controller: controller,),
 
         ],
-        onPageChanged: (index){
+        onPageChanged: (index) {
           context.read<Pageevents>().changebottombarindex(index);
-
         },
-//SEZER DÜNYANIN EN SALAK
       ),
 
     );

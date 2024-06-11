@@ -12,13 +12,14 @@ class Didyouknowaboutmilkywaywidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     return SizedBox(
       width: width,
       height: height / 3,
-      child: FutureBuilder(
-          future: context
+      child: StreamBuilder(
+          stream: context
               .watch<Firebaseevents>()
               .getaboutsomething("Didyouknowgalaxy"),
           builder: (context, snaptube) {

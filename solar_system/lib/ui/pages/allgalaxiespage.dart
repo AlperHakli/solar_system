@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solar_system/ui/widgets/allgalaxyieswidgets/emptyappbarallgalaxywidgets.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/emptyappbar.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/emptycontainer.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/smalleremptyconteiner.dart';
 
 class Allgalaxyiespage extends StatelessWidget {
   const Allgalaxyiespage({super.key});
@@ -11,6 +15,8 @@ class Allgalaxyiespage extends StatelessWidget {
         child: Column(
           children: [
             Emptyappbarallgalaxieswidget(),
+            Smalleremptycontainer(),
+            Headertextwidget(header: "Galaxies", fontsizewidthdivider: 15, leftmarginwitdthdivider: 25),
           ],
         ),
       ),

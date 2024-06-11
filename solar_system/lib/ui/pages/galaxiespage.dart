@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,46 +17,62 @@ import 'package:solar_system/ui/widgets/generalwidgets/smalleremptyconteiner.dar
 
 class Galaxiespage extends StatelessWidget {
   PageController controller;
-   Galaxiespage({super.key,required this.controller});
+
+  Galaxiespage({super.key, required this.controller});
+
+  Future<int> deneme ()async {
+    return 5;
+  }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-        future:
-            context.watch<Firebaseevents>().getaboutsomething("Aboutgalaxy"),
+    return StreamBuilder(
+        stream: context.watch<Firebaseevents>().getaboutsomething("Aboutgalaxy"),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             Map<String, dynamic> mymap =
                 snapshot.data!.data() as Map<String, dynamic>;
             return Scaffold(
               body: SingleChildScrollView(
-                  child: Center(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Emptycontainer(),
-                        Emptyappbar(controller: controller),
-                        Appbarwidget(header: mymap["header"],controller: controller,),
-                        Smalleremptycontainer(),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16.0),
-                          child: Datatexts(text: mymap["firstcontent"],widthdivider:23,),
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Emptycontainer(),
+                      Emptyappbar(controller: controller),
+                      Appbarwidget(
+                        header: mymap["header"],
+                        controller: controller,
+                      ),
+                      Smalleremptycontainer(),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: Datatexts(
+                          text: mymap["firstcontent"],
+                          widthdivider: 23,
                         ),
-                        Emptycontainer(),
-                        Getimagewithimgname(
-                            imgname: mymap["picture_name"],
-                            heightdivide: 2.5,
-                            widthdivide: 1),
-                        Smalleremptycontainer(),
-                        Headertextwidget(header: "Did you know?",fontsizewidthdivider: 17,leftmarginwitdthdivider: 25,),
-                        Emptycontainer(),
-                        Didyouknowaboutmilkywaywidget(name: "Didyouknowgalaxy"),
-                        Row(mainAxisAlignment: MainAxisAlignment.center,children: [Bottombutton()],),
-                        Emptycontainer(),
-
-                      ],
-                    ),
+                      ),
+                      Emptycontainer(),
+                      Getimagewithimgname(
+                          imgname: mymap["picture_name"],
+                          heightdivide: 2.5,
+                          widthdivide: 1),
+                      Smalleremptycontainer(),
+                      Headertextwidget(
+                        header: "Did you know?",
+                        fontsizewidthdivider: 17,
+                        leftmarginwitdthdivider: 25,
+                      ),
+                      Emptycontainer(),
+                      Didyouknowaboutmilkywaywidget(name: "Didyouknowgalaxy"),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [Bottombutton()],
+                      ),
+                      Emptycontainer(),
+                    ],
                   ),
+                ),
               ),
             );
           } else if (snapshot.hasError) {
