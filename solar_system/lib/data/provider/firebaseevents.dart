@@ -23,6 +23,14 @@ class Firebaseevents extends ChangeNotifier {
     final mystate = collection.snapshots();
     return mystate;
   }
+  Stream<QuerySnapshot<Map<String,dynamic>>> getallsomethinglistviewdatas(String name){
+    
+    var document = FirebaseFirestore.instance.collection("ViewAllSomething").doc(name).collection("ListviewColl");
+    final mystate = document.snapshots();
+    return mystate;
+
+    
+  }
   Stream<QuerySnapshot<Map<String,dynamic>>> getaboutnasadatas(){
     var coll = FirebaseFirestore.instance.collection("About nasa");
     final mystate = coll.snapshots();
