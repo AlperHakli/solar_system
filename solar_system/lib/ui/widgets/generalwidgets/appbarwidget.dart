@@ -3,9 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class Appbarwidget extends StatelessWidget {
   String header;
-  PageController controller;
 
-  Appbarwidget({super.key, required this.header,required this.controller});
+  Appbarwidget({super.key, required this.header});
 
   @override
   Widget build(BuildContext context) {

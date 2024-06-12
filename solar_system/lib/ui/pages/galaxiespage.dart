@@ -20,14 +20,15 @@ class Galaxiespage extends StatelessWidget {
 
   Galaxiespage({super.key, required this.controller});
 
-  Future<int> deneme ()async {
+  Future<int> deneme() async {
     return 5;
   }
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
-        stream: context.watch<Firebaseevents>().getaboutsomething("Aboutgalaxy"),
+        stream:
+            context.watch<Firebaseevents>().getaboutsomething("Aboutgalaxy"),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             Map<String, dynamic> mymap =
@@ -42,7 +43,6 @@ class Galaxiespage extends StatelessWidget {
                       Emptyappbar(controller: controller),
                       Appbarwidget(
                         header: mymap["header"],
-                        controller: controller,
                       ),
                       Smalleremptycontainer(),
                       Padding(
@@ -54,9 +54,11 @@ class Galaxiespage extends StatelessWidget {
                       ),
                       Emptycontainer(),
                       Getimagewithimgname(
-                          imgname: mymap["picture_name"],
-                          heightdivide: 2.5,
-                          widthdivide: 1),
+                        imgname: mymap["picture_name"],
+                        heightdivide: 2.5,
+                        widthdivide: 1,
+                        iscircular: false,
+                      ),
                       Smalleremptycontainer(),
                       Headertextwidget(
                         header: "Did you know?",

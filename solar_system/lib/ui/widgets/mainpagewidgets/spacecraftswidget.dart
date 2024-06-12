@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:solar_system/data/entity/generalentity.dart';
+import 'package:solar_system/data/model/generalentity.dart';
 import 'package:solar_system/ui/widgets/mainpagewidgets/spacecraftitem.dart';
 
 import '../../../data/provider/firebaseevents.dart';

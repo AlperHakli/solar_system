@@ -18,7 +18,7 @@ class Blackholepage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Appbarwidget(header: "Black Holes",controller: controller,),
+            Appbarwidget(header: "Black Holes"),
              Aboutsomethingwidget(name: "Aboutblackhole",),
 
 

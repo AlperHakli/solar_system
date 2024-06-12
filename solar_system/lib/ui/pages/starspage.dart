@@ -17,7 +17,7 @@ class Starspage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Emptycontainer(),
-            Appbarwidget(header: "About Stars",controller: controller,),
+            Appbarwidget(header: "About Stars"),
 
           ],
         ),

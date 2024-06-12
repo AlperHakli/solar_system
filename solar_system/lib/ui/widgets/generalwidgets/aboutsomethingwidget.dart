@@ -2,8 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:solar_system/data/entity/aboutsomethingentity.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
+
+import '../../../data/model/aboutsomethingentity.dart';
 
 class Aboutsomethingwidget extends StatelessWidget {
   String name;

@@ -67,6 +67,7 @@ class Bottomnavigationwidget extends StatelessWidget {
                     ],
                     onTap: (value) {
 
+
                       context.read<Pageevents>().changebottombarindex(value);
                       controller.animateToPage(value, duration: Duration(milliseconds: 150), curve: Curves.easeIn);
 

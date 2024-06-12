@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:solar_system/data/entity/generalentity.dart';
+import 'package:solar_system/data/model/generalentity.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
 
 class Spacecraftitem extends StatelessWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solar_system/ui/widgets/allgalaxyieswidgets/emptyappbarallgalaxywidgets.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/allsomethinglistview.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/emptyappbar.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/emptycontainer.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
@@ -17,6 +18,7 @@ class Allgalaxyiespage extends StatelessWidget {
             Emptyappbarallgalaxieswidget(),
             Smalleremptycontainer(),
             Headertextwidget(header: "Galaxies", fontsizewidthdivider: 15, leftmarginwitdthdivider: 25),
+            Allsomethinglistview(nameofdoc: "ViewAllGalaxies"),
           ],
         ),
       ),

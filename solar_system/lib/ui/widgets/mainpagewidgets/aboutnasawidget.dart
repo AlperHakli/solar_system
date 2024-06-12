@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/colors.dart';
-import 'package:solar_system/data/entity/generalentity.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
+
+import '../../../data/model/generalentity.dart';
 
 class Aboutnasa extends StatelessWidget {
   const Aboutnasa({super.key});

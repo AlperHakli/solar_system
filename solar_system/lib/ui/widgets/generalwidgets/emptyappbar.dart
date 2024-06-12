@@ -14,6 +14,7 @@ class Emptyappbar extends StatelessWidget {
         toolbarHeight: height/25,
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(icon: Icon(Icons.arrow_back_outlined),onPressed: (){
+
           controller.animateToPage(2, duration: Duration(milliseconds: 1000), curve: Curves.easeIn);
           context.read<Pageevents>().changebottombarindex(2);
 
