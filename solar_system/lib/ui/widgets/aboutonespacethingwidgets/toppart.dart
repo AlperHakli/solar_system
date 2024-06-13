@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/getimagewithimgnamewidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
 
+import '../generalwidgets/smalleremptyconteiner.dart';
+
 class Toppart extends StatelessWidget {
   String imgname;
   String header;
@@ -13,7 +15,8 @@ class Toppart extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Getimagewithimgname(imgname: imgname, heightdivide: 10, widthdivide: 10, iscircular: true),
+        Getimagewithimgname(imgname: imgname, heightdivide: 5, widthdivide: 3, iscircular: true),
+        Smalleremptycontainer(),
         Headertextwidget(header: header, fontsizewidthdivider: 50, leftmarginwitdthdivider: width),
         
       ],

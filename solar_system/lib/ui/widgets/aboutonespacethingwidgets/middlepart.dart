@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/autosizedtextwidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/datatexts.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
 
@@ -15,7 +16,7 @@ class Middlepart extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Headertextwidget(header: header, fontsizewidthdivider: 60, leftmarginwitdthdivider: width),
-        Datatexts(text: content, widthdivider: 1.2),
+        Autosizedtextwidget(data: content, widthdivider: width, heightdivider: 4),
       ],
 
     );

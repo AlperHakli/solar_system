@@ -38,6 +38,7 @@ dependencies:
   firebase_storage:
   curved_navigation_bar:
   carousel_slider:
+  auto_size_text:
 
 
   # The following adds the Cupertino Icons font to your application.

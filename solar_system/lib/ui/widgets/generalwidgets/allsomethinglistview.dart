@@ -28,7 +28,7 @@ class Allsomethinglistview extends StatelessWidget {
                     DocumentSnapshot mydocument = mydocuments[index];
                     Map<String, dynamic> mydocumentmap =
                     mydocument.data() as Map<String, dynamic>;
-                    var model = Listviewcollmodel(
+                    var listviewcollmodel = Listviewcollmodel(
                         size: mydocumentmap["size"],
                         content: mydocumentmap["content"],
                         header: mydocumentmap["header"],
@@ -36,7 +36,7 @@ class Allsomethinglistview extends StatelessWidget {
                         age: mydocumentmap["age"],
                         mass: mydocumentmap["mass"]);
                     return Allsomethinglisttile(
-                        header: model.header, content: model.content);
+                       listviewcollmodel: listviewcollmodel,);
 
                   }),
             );

@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="938439bb-00e7-4d69-883f-630a43dbec2d" name="Changes" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/aboutonespacething.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/toppart.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/allsomethinglisttile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/autosizedtextwidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/data/provider/firebaseevents.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/allgalaxiespage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/allgalaxiespage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/blackholepage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/blackholepage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/galaxiespage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/galaxiespage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/starspage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/starspage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/aboutsomethingwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/aboutsomethingwidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/pages/aboutonespacething.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/pages/aboutonespacething.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/bottompart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/bottompart.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/middlepart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/middlepart.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/toppart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/aboutonespacethingwidgets/toppart.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/allsomethinglisttile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/allsomethinglisttile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/allsomethinglistview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/allsomethinglistview.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/appbarwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/appbarwidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/bottomnavigationwidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/bottomnavigationwidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/emptyappbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/emptyappbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/getimagewithimgnamewidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/generalwidgets/getimagewithimgnamewidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/aboutnasawidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/aboutnasawidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/spacecraftitem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/spacecraftitem.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/spacecraftswidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/lib/ui/widgets/mainpagewidgets/spacecraftswidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_system/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solar_system/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
