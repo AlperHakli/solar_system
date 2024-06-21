@@ -25,7 +25,7 @@ class Allsomethinglisttile extends StatelessWidget {
         title: Headertextwidget(
             header: listviewcollmodel.header,
             fontsizewidthdivider: 20,
-            leftmarginwitdthdivider: width),
+            leftmarginwidthdivider: width),
         subtitle: Datatexts(
           text: "${listviewcollmodel.content.substring(0, 100)}...",
           widthdivider: 25,

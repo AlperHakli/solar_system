@@ -47,7 +47,7 @@ class Didyouknowaboutmilkywaywidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Headertextwidget(
-                          header: mymap["header"], fontsizewidthdivider: 24,leftmarginwitdthdivider: width,),
+                          header: mymap["header"], fontsizewidthdivider: 24,leftmarginwidthdivider: width,),
                       Datatextswithwidthdelimiter(
                           text: mymap["content"],
                           fontsizewidthdivider: 25,

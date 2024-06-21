@@ -31,7 +31,7 @@ class Appbarwidget extends StatelessWidget {
                         ,fontSize: width / 17,
                         color: Theme.of(context).colorScheme.onPrimary),
 
-                  )
+                  ),
                 ],
               ),
             ),

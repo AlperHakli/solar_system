@@ -13,7 +13,8 @@ import 'package:solar_system/ui/widgets/generalwidgets/emptyappbar.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/emptycontainer.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/getimagewithimgnamewidget.dart';
 import 'package:solar_system/ui/widgets/generalwidgets/headertextwidget.dart';
-import 'package:solar_system/ui/widgets/generalwidgets/smalleremptyconteiner.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/moreinformationbutton.dart';
+import 'package:solar_system/ui/widgets/generalwidgets/smalleremptycontainer.dart';
 
 class Galaxiespage extends StatelessWidget {
   PageController controller;
@@ -42,15 +43,24 @@ class Galaxiespage extends StatelessWidget {
                       Emptycontainer(),
                       Emptyappbar(controller: controller),
                       Appbarwidget(
-                        header: mymap["header"],
+                        header: "Galaxies",
                       ),
                       Smalleremptycontainer(),
                       Padding(
                         padding: const EdgeInsets.only(left: 16.0),
                         child: Datatexts(
-                          text: mymap["firstcontent"],
+                          text: "${(mymap["content"]).toString().substring(0,200)} ...",
                           widthdivider: 23,
                         ),
+                      ),
+                      Emptycontainer(),
+                     Moreinformationbutton(content: mymap["content"], header: "Galaxies",buttonname: "More",),
+                      Emptycontainer(),
+                      Headertextwidget(header: mymap["header"], fontsizewidthdivider: 18, leftmarginwidthdivider: 30),
+                      Emptycontainer(),
+                      Padding(
+                        padding:  EdgeInsets.only(left: 16.0),
+                        child: Datatexts(text: mymap["firstcontent"], widthdivider: 23),
                       ),
                       Emptycontainer(),
                       Getimagewithimgname(
@@ -63,7 +73,7 @@ class Galaxiespage extends StatelessWidget {
                       Headertextwidget(
                         header: "Did you know?",
                         fontsizewidthdivider: 17,
-                        leftmarginwitdthdivider: 25,
+                        leftmarginwidthdivider: 25,
                       ),
                       Emptycontainer(),
                       Didyouknowaboutmilkywaywidget(name: "Didyouknowgalaxy"),

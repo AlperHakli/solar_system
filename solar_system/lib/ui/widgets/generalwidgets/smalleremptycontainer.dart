@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Smalleremptycontainer extends StatelessWidget {
-  const Smalleremptycontainer({super.key});
+
+
+   Smalleremptycontainer();
+
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:solar_system/data/provider/firebaseevents.dart';
@@ -9,15 +7,18 @@ class Getimagewithimgname extends StatelessWidget {
   double widthdivide;
   double heightdivide;
   bool iscircular;
-  
 
-  Getimagewithimgname({super.key, required this.imgname,required this.heightdivide,required this.widthdivide,required this.iscircular});
+  Getimagewithimgname(
+      {super.key,
+      required this.imgname,
+      required this.heightdivide,
+      required this.widthdivide,
+      required this.iscircular});
 
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-
 
     return FutureBuilder(
         future: context
@@ -26,11 +27,16 @@ class Getimagewithimgname extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Container(
-              width: width/widthdivide,
-                height: height/heightdivide,
-                decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(15))),
-
-                child: Image.network(snapshot.data!,fit: BoxFit.fill,));
+              width: width / widthdivide,
+              height: height / heightdivide,
+              decoration: iscircular
+                  ? BoxDecoration(
+                      image: DecorationImage(image: NetworkImage(snapshot.data!),fit: BoxFit.fill),
+                      borderRadius: BorderRadius.all(Radius.circular(15)))
+                  : BoxDecoration(
+                image: DecorationImage(image: NetworkImage(snapshot.data!),fit: BoxFit.fill),
+              ),
+            );
           } else if (snapshot.hasError) {
             return CircularProgressIndicator();
           } else {

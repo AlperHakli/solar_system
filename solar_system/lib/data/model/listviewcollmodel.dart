@@ -5,6 +5,7 @@ class Listviewcollmodel {
   String picture_name;
   String header;
   String content;
+  String subheader;
 
   Listviewcollmodel(
       {required this.size,
@@ -12,5 +13,6 @@ class Listviewcollmodel {
       required this.header,
       required this.picture_name,
       required this.age,
-      required this.mass});
+      required this.mass,
+      required this.subheader});
 }

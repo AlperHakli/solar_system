@@ -7,8 +7,9 @@ import 'package:solar_system/ui/widgets/generalwidgets/allsomethinglisttile.dart
 
 class Allsomethinglistview extends StatelessWidget {
   String nameofdoc;
+  String subheader;
 
-  Allsomethinglistview({super.key, required this.nameofdoc});
+  Allsomethinglistview({super.key, required this.nameofdoc,required this.subheader});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,8 @@ class Allsomethinglistview extends StatelessWidget {
                         header: mydocumentmap["header"],
                         picture_name: mydocumentmap["picture_name"],
                         age: mydocumentmap["age"],
-                        mass: mydocumentmap["mass"]);
+                        mass: mydocumentmap["mass"],
+                    subheader: subheader);
                     return Allsomethinglisttile(
                        listviewcollmodel: listviewcollmodel,);
 
